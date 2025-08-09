@@ -107,9 +107,6 @@ main {
     border-radius: 8px;
     outline: none;
     cursor: pointer;
-}
-
-.button p {
     font-family: 'montserrat';
     font-weight: 500;
     color: white;
