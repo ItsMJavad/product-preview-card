@@ -1,0 +1,149 @@
+@font-face {
+    font-family: montserrat;
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: fraunces;
+    src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3eae3;
+}
+
+main {
+    width: max(40%, 500px);
+    margin: 12rem auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.product-image {
+    width: 50%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+}
+
+.product-container {
+    padding: 1rem 0 2rem;
+    background-color: white;
+    box-sizing: border-box;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+}
+
+.product {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .title {
+    margin: 1rem 0;
+    font-family: 'montserrat';
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    color: rgb(87, 87, 87);
+}
+
+.product h1 {
+    font-family: 'fraunces';
+    line-height: 1;
+    margin: 0;
+}
+
+.product .description {
+    margin: 1rem 0;
+    padding: 0;
+    font-family: 'montserrat';
+    font-size: 0.84rem;
+    font-weight: 500;
+    line-height: 1.7;
+    color: rgb(87, 87, 87);
+}
+
+.price {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price .main-price {
+    margin: 0 0 1.1rem;
+    box-sizing: border-box;
+    font-family: 'fraunces';
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3c8067;
+}
+
+.price .second-price {
+    margin: 0 0 1.1rem;
+    text-decoration: line-through;
+    font-family: 'montserrat';
+    font-size: 0.8rem;
+    color: rgb(87, 87, 87);
+    font-weight: 500;
+}
+
+.button {
+    height: 3rem;
+    background-color: #3c8067;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button p {
+    font-family: 'montserrat';
+    font-weight: 500;
+    color: white;
+}
+
+.button:active,
+.button:hover {
+    background-color: #1b4133;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: #3e52a3;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 6rem auto 12rem;
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .product-image {
+        content: url(images/image-product-mobile.jpg);
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .product-container {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+}
